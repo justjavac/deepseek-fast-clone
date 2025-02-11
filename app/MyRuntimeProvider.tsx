@@ -7,7 +7,7 @@ import {
   useLocalRuntime,
 } from "@assistant-ui/react";
 
-const MyModelAdapter: ChatModelAdapter = {
+const WhyAreYouSoFastAdapter: ChatModelAdapter = {
   async run() {
     return {
       content: [
@@ -25,7 +25,7 @@ export function MyRuntimeProvider({
 }: Readonly<{
   children: ReactNode;
 }>) {
-  const runtime = useLocalRuntime(MyModelAdapter);
+  const runtime = useLocalRuntime(WhyAreYouSoFastAdapter);
 
   return (
     <AssistantRuntimeProvider runtime={runtime}>
