@@ -71,8 +71,15 @@ export const Assistant: FC = () => {
               </ComposerPrimitive.Cancel>
             </ThreadPrimitive.If>
           </ComposerPrimitive.Root>
-          <p className="p-2 text-center text-xs text-[#cdcdcd]">
-            内容由 AI 生成，请仔细甄别
+          <p className="p-4 text-center text-xs text-[#cdcdcd]">
+            内容不是由 AI 生成，请仔细甄别。源码地址{" "}
+            <a
+              className="text-blue-600"
+              href="https://github.com/justjavac/deepseek-fast-clone"
+              target="_blank"
+            >
+              deepseek-fast-clone
+            </a>
           </p>
         </ThreadPrimitive.Root>
       </TooltipProvider>
