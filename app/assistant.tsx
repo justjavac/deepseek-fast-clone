@@ -9,7 +9,7 @@ import {
   MessagePrimitive,
   ThreadPrimitive,
 } from "@assistant-ui/react";
-import { MyRuntimeProvider } from "@/app/MyRuntimeProvider";
+import { DeepseekFastCloneProvider } from "@/app/DeepseekFastCloneProvider";
 import * as Avatar from "@radix-ui/react-avatar";
 import {
   ArrowUpIcon,
@@ -30,7 +30,7 @@ import {
 
 export const Assistant: FC = () => {
   return (
-    <MyRuntimeProvider>
+    <DeepseekFastCloneProvider>
       <TooltipProvider>
         <ThreadPrimitive.Root className="text-foreground dark flex min-h-screen flex-col items-stretch bg-[#212121] px-4">
           <ThreadPrimitive.Viewport className="flex flex-grow flex-col gap-8 overflow-y-scroll pt-16">
@@ -76,7 +76,7 @@ export const Assistant: FC = () => {
           </p>
         </ThreadPrimitive.Root>
       </TooltipProvider>
-    </MyRuntimeProvider>
+    </DeepseekFastCloneProvider>
   );
 };
 

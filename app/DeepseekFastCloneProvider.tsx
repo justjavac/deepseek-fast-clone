@@ -20,9 +20,7 @@ const WhyAreYouSoFastAdapter: ChatModelAdapter = {
   },
 };
 
-export function MyRuntimeProvider({
-  children,
-}: Readonly<{
+export function DeepseekFastCloneProvider({ children }: Readonly<{
   children: ReactNode;
 }>) {
   const runtime = useLocalRuntime(WhyAreYouSoFastAdapter);
